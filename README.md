@@ -42,7 +42,7 @@ Web browser
 
 ### Setup Project
 Clone the Repository
-  git clone https://github.com/your-usernayour-projectgit
+  git clone https://github.com/saurabhbisht076/fullstack_assignment
   cd assignmentfullstack
 
 Backend (Node.js)
