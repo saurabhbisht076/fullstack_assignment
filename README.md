@@ -42,25 +42,28 @@ Web browser
 
 ### Setup Project
 Clone the Repository
+```
   git clone https://github.com/saurabhbisht076/fullstack_assignment
   cd assignmentfullstack
-
-Backend (Node.js)
+```
+Backend (Node.js
+```
   1.Navigate to the server directory:
     cd server
   2.Install the dependencies:
     npm install
   3.Start the backend server:
     npm run dev
-
+```
 Frontend (React)
+```
   1.Navigate to the client directory:
     cd client
   2.Install the dependencies:
     npm install
   3.Start the frontend development server:
     npm start
-
+```
 
 ## Authors
 
