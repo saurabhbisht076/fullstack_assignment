@@ -1,7 +1,6 @@
 const cardModel = require('../models/card.model');
 const Card = cardModel.Card;
 
-// Retrieve all cards
 const getAllCards = async (req, res) => {
     try {
         const cardData = await Card.find();
@@ -12,12 +11,11 @@ const getAllCards = async (req, res) => {
     }
 }
 
-// Add a new card
 const addCardData = async (req, res) => {
     try {
         const cardData = new Card(req.body);
-        await cardData.save(); // Ensure to await the save operation
-        res.status(201).json(cardData); // Return the created card data
+        await cardData.save(); 
+        res.status(201).json(cardData);
     } catch (err) {
         console.error('Error adding card:', err);
         if (err.name === 'ValidationError') {
@@ -27,7 +25,6 @@ const addCardData = async (req, res) => {
     }
 }
 
-// Retrieve a specific card by title
 const cardByTitle = async (req, res) => {
     try {
         const card = await Card.findOne({ title: req.params.title });
